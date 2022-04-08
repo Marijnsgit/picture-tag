@@ -39,13 +39,13 @@
 </head>
 <body>
     <figure>
-        <!-- CASE: full image op mobile, grid view 20% op tablet/desktop (breakpoint: 600)  -->
+        <!-- CASE: full image, breakpoint > 600 = 20%)  -->
         <picture>
             <source media="(max-width: 600px)" srcset="images/900.webp" type="image/webp">
             <source media="(min-width: 601px)" srcset="images/400.webp 400w, images/600.webp 600w, images/900.webp 900w" type="image/webp" sizes="20vw">
             <img alt="Fallback" srcset="images/400.jpg 400w, images/600.jpg 600w, images/900.jpg 900w" src="images/fallback.jpg" sizes="(max-width:600px) 100vw, 20vw">
         </picture>
-        <!-- CASE: hero  -->
+        <!-- CASE: full image only  -->
     </figure>
     <figure class="hero">
         <picture>
